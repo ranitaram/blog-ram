@@ -232,19 +232,19 @@ export default function Home() {
               </div>
             </div>
             <div className="letstalk_sec mt-3">
-              <h2>Let's Talk</h2>
+              <h2>Redes sociales</h2>
               <div className="talk_sec">
-                <h4>Want to find out how I can solve problems specific to your business? Let's talk.</h4>
+                <h4>¿Quieres saber cómo puedo resolver problemas específicos de tu negocio? Hablemos.</h4>
                 <div className="social_talks flex flex-center gap-1 mt-2">
-                  <div className="st_icon" data-aos="fade-up">
+                  <div className="st_icon" data-aos="fade-up"  onClick={() => window.location.href = 'https://github.com/ranitaram'}>
                     <FaGithub />
                   </div>
                   <div className="st_icon" data-aos="fade-up">
                     <FaTwitter />
                   </div>
-                  <div className="st_icon" data-aos="fade-up">
+                  {/* <div className="st_icon" data-aos="fade-up">
                     <FaInstagram />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

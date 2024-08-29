@@ -78,7 +78,7 @@ export default function Tagscategory() {
                                 <h1>{tags}</h1>
                                 <span>{publishedblogs.filter(blog => blog.tags.includes(tags)).length}</span>
                             </div>
-                            <p data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            {/* <p data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p> */}
                         </div>
                         <div className="category_blogs mt-3">
                             {loading ? <><div className="wh-100 flex flex-center mt-2 pb-5">
@@ -94,13 +94,13 @@ export default function Tagscategory() {
                                             <div className="bloginfo mt-2">
                                                 <Link href={`/tag/${item.tags[0]}`}><div className="blogtag">{item.tags[0]}</div></Link>
                                                 <Link href={`/blog/${item.slug}`}><h3>{item.title}</h3></Link>
-                                                <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                                <p>{item.slug}</p>
                                                 <div className="blogauthor flex gap-1">
                                                     <div className="blogaimg">
-                                                        <img src="/img/coder.png" alt="author" />
+                                                        <img src="/img/ram-sin-fondo.png" alt="author" />
                                                     </div>
                                                     <div className="flex flex-col flex-left gap-05">
-                                                        <h4>vbm coder</h4>
+                                                        <h4>Ramses Indalecio</h4>
                                                         <span>{new Date(item.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
                                                     </div>
                                                 </div>

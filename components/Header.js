@@ -84,14 +84,14 @@ export default function Header() {
                 </div>
                 <div className="searchbar">
                     <IoSearchSharp />
-                    <input onClick={openSearch} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} type="search" placeholder="Discover news, articles and more" />
+                    <input onClick={openSearch} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} type="search" placeholder="Explora noticias, artículos y más" />
                 </div>
 
                 <div className="nav_list_dark">
                     <ul>
                         <li><Link href="/">Home</Link></li>
-                        <li><Link href="/">About Me</Link></li>
-                        <li><Link href="/">Contact</Link></li>
+                        {/* <li><Link href="/">About Me</Link></li>
+                        <li><Link href="/">Contacto</Link></li> */}
                     </ul>
                     <div className="navlist_mobile_ul">
                         <button onClick={toggleDarkMode}>{darkMode ? <IoMoonSharp /> : <LuSun />}</button>
@@ -113,7 +113,7 @@ export default function Header() {
                     <input type="text"
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        placeholder="Discover news, articles and more" />
+                        placeholder="Explora noticias, artículos y otros contenidos." />
                 </div>
                 <div className="search_data text-center">
                     {loading ? <><div className="wh-100 flex flex-center mt-2 pb-5">
@@ -123,11 +123,11 @@ export default function Header() {
                                 <div className="blog" >
                                     <div className="bloginfo">
                                         <h3>{blog.title}</h3>
-                                        <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                        {/* <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p> */}
                                     </div>
                                 </div>
                             </Link>
-                        })}</> : <div>No Search Result</div>}
+                        })}</> : <div>No hay resultados</div>}
 
                     </>}
                 </div>
@@ -138,23 +138,28 @@ export default function Header() {
             </div>
             <div className={aside ? "navlist_mobile open" : "navlist_mobile"}>
                 <div className="navlist_m_title flex flex-sb">
-                    <h1>VBMBLOGS</h1>
+                    <h1>TiburónCode</h1>
                     <button onClick={asideClose}><FaXmark /></button>
                 </div>
                 <hr />
                 <h3 className="mt-3">Main Menu</h3>
                 <ul onClick={handleLinkClick}>
                     <li><Link href="/">Home</Link></li>
-                    <li><Link href="/">About Me</Link></li>
-                    <li><Link href="/">Contact</Link></li>
+                    {/* <li><Link href="/">About Me</Link></li>
+                    <li><Link href="/">Contact</Link></li> */}
                 </ul>
                 <hr />
-                <h3 className="mt-3">Topics</h3>
+                <h3 className="mt-3">Temas</h3>
                 <ul onClick={handleLinkClick}>
-                    <li><Link href="/topics/htmlcssjs">Html css js</Link></li>
+                    <li><Link href="/topics/htmlcssjs">Html css Ts</Link></li>
                     <li><Link href="/topics/nextjs">Next js</Link></li>
                     <li><Link href="/topics/database">Database</Link></li>
                     <li><Link href="/topics/deployment">Deployment</Link></li>
+                    <li><Link href="/topics/nest">Nest</Link></li>
+                    <li><Link href="/topics/web">Web para negocios</Link></li>
+                    <li><Link href="/topics/recursos">Recursos ùtiles</Link></li>
+                    <li><Link href="/topics/tailwind">Tailwind</Link></li>
+                    <li><Link href="/topics/angular">Angular</Link></li>
                 </ul>
             </div>
         </div>
