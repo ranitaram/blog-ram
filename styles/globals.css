@@ -711,6 +711,15 @@ button {
 .dark .leftheader_info h3 {
   color: #cbd5e0;
 }
+.leftheader_info p {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #777;
+}
+
+.dark .leftheader_info p {
+  color: #cbd5e0;
+}
 
 .leftheader_info button {
   font-size: 1.2rem;
