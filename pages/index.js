@@ -12,7 +12,7 @@ import { FaTwitter } from "react-icons/fa";
 import { PiToolboxFill } from "react-icons/pi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useFetchData from "@/hooks/useFetchData";
 
 function extractFirstImageUrl(markdownContent) {
@@ -31,6 +31,23 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage] = useState(5);
   const { alldata, loading } = useFetchData(`/api/getblog`);
+
+  const [downloadLink, setDownloadLink] = useState(null);
+  const hiddenLink = useRef(null);
+
+  useEffect(() => {
+    const fetchPdf = async () => {
+      const response = await fetch('/ebooks/ebook.pdf');
+      const blob = await response.blob();
+      setDownloadLink(URL.createObjectURL(blob));
+    };
+    fetchPdf();
+  }, []);
+
+  const handleClick = () => {
+    hiddenLink.current.click();
+  };
+
 
   // Function to handle page change
   const paginate = (pageNumber) => {
@@ -69,12 +86,16 @@ export default function Home() {
         <div className="container flex flex-sb w-100">
           <div className="leftheader_info" data-aos="fade-right">
             <h1>Soluciones digitales a medida. <span></span><br /></h1>
-            <h3><span>Especializado en TypeScript y NextJs</span></h3>
+            <h3><span>¿Cuánto cuesta un sitio web? Descubre cómo calcularlo con nuestra guía.</span></h3>
             {/* <h3>Specialized in TypeScript and NextJs</h3> */}
             <div className="flex gap-2 ">
-              <Link href='/contact'><button>Contacto</button></Link>
-              <Link href='/about'><button>Sobre nosotros</button></Link>
+              
+              {/* <Link href='/about'><button>Sobre nosotros</button></Link> */}
+              <Link href='/'><button className="download-button" onClick={handleClick}>Descarga gratis</button></Link>
+              <a href={downloadLink} download="ebook.pdf" ref={hiddenLink} style={{ display: 'none' }} />
+              
             </div>
+
           </div>
           <div className="rightheader_img" data-aos="zoom-in">
             {/* <div className="image_bg_top"></div>
@@ -83,6 +104,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+   
+
       <section className="main_blog_section">
         <div className="container flex flex-sb flex-left flex-wrap">
           <div className="leftblog_sec">
