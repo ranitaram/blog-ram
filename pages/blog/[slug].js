@@ -100,8 +100,9 @@ export default function blogPage() {
             <div className="container">
                 <div className="topslug_titles" data-aos="fade-right">
                     <h1 className="slugtitle">{loading ?<div> loading...</div> : blog && blog[0]?.title}</h1>
-                    <h5>By <span>Vbm Coder</span>・ Published in <span>{loading ?<div> loading...</div> : blog && blog[0]?.blogcategory}</span> ・   {blog && new Date(blog[0].createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                        <span>・ 1 min read</span></h5>
+                    <h5>Autor: <span>Ramses Indalecio</span>・ Publicado en la categoria de: <span>{loading ?<div> loading...</div> : blog && blog[0]?.blogcategory}</span> ・   {blog && new Date(blog[0].createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                        {/* <span>・ 1 min read</span> */}
+                        </h5>
                 </div>
 
                 {/* blog data section */}
@@ -132,23 +133,23 @@ export default function blogPage() {
                             <div className="slugprofile_sec">
                                 <div className="profile_imgbg"></div>
                                 <div className="slug_profile_img">
-                                    <div className="image_bg_top0"></div>
-                                    <div className="image_bg_top1"></div>
-                                    <img src="/img/coder.png" alt="coder" />
+                                    {/* <div className="image_bg_top0"></div>
+                                    <div className="image_bg_top1"></div> */}
+                                    <img src="/img/logo-shark.png" alt="coder" />
                                 </div>
                             </div>
-                            <h3>Vbm Coder</h3>
+                            <h3>TiburónCode</h3>
                             <h4>Website Developer</h4>
                             <div className="social_talks flex flex-center gap-1 mt-2">
-                                <div className="st_icon">
+                                <div className="st_icon" onClick={() => window.location.href = 'https://github.com/ranitaram'}>
                                     <FaGithub />
                                 </div>
-                                <div className="st_icon">
+                                <div className="st_icon" onClick={() => window.location.href = 'https://x.com/TiburonCode'}>
                                     <FaTwitter />
                                 </div>
-                                <div className="st_icon">
+                                {/* <div className="st_icon">
                                     <FaInstagram />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="topics_sec">

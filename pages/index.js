@@ -239,7 +239,7 @@ export default function Home() {
                   <div className="st_icon" data-aos="fade-up"  onClick={() => window.location.href = 'https://github.com/ranitaram'}>
                     <FaGithub />
                   </div>
-                  <div className="st_icon" data-aos="fade-up">
+                  <div className="st_icon" data-aos="fade-up" onClick={() => window.location.href = 'https://x.com/TiburonCode'}>
                     <FaTwitter />
                   </div>
                   {/* <div className="st_icon" data-aos="fade-up">

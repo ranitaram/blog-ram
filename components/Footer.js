@@ -18,18 +18,18 @@ export default function Footer() {
                     </ul>
                 </div> */}
                 <div className="q_links" data-aos="fade-up">
-                    <h3>Legal Stuff Links</h3>
+                    <h3>Enlaces Legales</h3>
                     <ul>
                         <li><Link href='/politica-privacidad'>Política de Privacidad.</Link></li>
                         <li><Link href='/politica-cookies'>POLÍTICA DE COOKIES</Link></li>
-                        <li><Link href='/'>Terms Of Use</Link></li>
+                        <li><Link href='/terminos-uso'>Términos de uso</Link></li>
                     </ul>
                 </div>
                 <div className="q_links" data-aos="fade-left">
                     <h3>Social Media</h3>
                     <ul>
                         <li><Link href='https://github.com/ranitaram'>Github</Link></li>
-                        <li><Link href='/'>Twitter</Link></li>
+                        <li><Link href='https://x.com/TiburonCode'>Twitter</Link></li>
                         {/* <li><Link href='/'>Instagram</Link></li> */}
                     </ul>
                 </div>

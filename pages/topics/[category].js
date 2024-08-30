@@ -79,7 +79,7 @@ export default function CategoryPage() {
                             <h1>{loading ? <div>Loading...</div> : publishedblogs ? publishedblogs && publishedblogs[0]?.blogcategory : publishedblogs && publishedblogs.blogcategory}</h1>
                             <span>{loading ? <div>0</div> : publishedblogs.filter(blog => blog.blogcategory).length}</span>
                         </div>
-                        <p data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <p data-aos="fade-left">!Ups.. Aún no hay categorias</p>
                     </div>
                     <div className="category_blogs mt-3">
                         {loading ? <><div className="wh-100 flex flex-center mt-2 pb-5">
@@ -95,10 +95,10 @@ export default function CategoryPage() {
                                         <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
                                         <div className="blogauthor flex gap-1">
                                             <div className="blogaimg">
-                                                <img src="/img/coder.png" alt="author" />
+                                                <img src="/img/ram-sin-fondo.png" alt="author" />
                                             </div>
                                             <div className="flex flex-col flex-left gap-05">
-                                                <h4>vbm coder</h4>
+                                                <h4>Ramses Indalecio</h4>
                                                 <span>{new Date(item.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
                                             </div>
                                         </div>
