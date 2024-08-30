@@ -79,7 +79,7 @@ export default function CategoryPage() {
                             <h1>{loading ? <div>Loading...</div> : publishedblogs ? publishedblogs && publishedblogs[0]?.blogcategory : publishedblogs && publishedblogs.blogcategory}</h1>
                             <span>{loading ? <div>0</div> : publishedblogs.filter(blog => blog.blogcategory).length}</span>
                         </div>
-                        <p data-aos="fade-left">!Ups.. Aún no hay categorias</p>
+                        <p data-aos="fade-left">!Ups.. Aún no hay</p>
                     </div>
                     <div className="category_blogs mt-3">
                         {loading ? <><div className="wh-100 flex flex-center mt-2 pb-5">
@@ -92,7 +92,7 @@ export default function CategoryPage() {
                                     <div className="bloginfo mt-2">
                                         <Link href={`/tag/${item.tags[0]}`}><div className="blogtag">{item.tags[0]}</div></Link>
                                         <Link href={`/blog/${item.slug}`}><h3>{item.title}</h3></Link>
-                                        <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                        {/* <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p> */}
                                         <div className="blogauthor flex gap-1">
                                             <div className="blogaimg">
                                                 <img src="/img/ram-sin-fondo.png" alt="author" />
