@@ -14,6 +14,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import useFetchData from "@/hooks/useFetchData";
+import ImageSection from "@/components/poyectos";
 
 function extractFirstImageUrl(markdownContent) {
   // Check if markdownContent is provided and non-empty
@@ -105,7 +106,7 @@ export default function Home() {
         </div>
       </section>
 
-   
+     {/* <ImageSection/> */}
 
       <section className="main_blog_section">
         <div className="container flex flex-sb flex-left flex-wrap">

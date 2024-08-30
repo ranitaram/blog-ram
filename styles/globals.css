@@ -1863,10 +1863,22 @@ button {
   right: 0;
   background-color: #212529;
   color: #fff;
-  padding: 15px;
+  padding: 1rem;
   text-align: center;
   z-index: 9999;
+  font-size: 16px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+}
+
+@media (max-width: 768px) { /* Punto de ruptura para tablets y móviles */
+  #cookie-banner {
+    font-size: 14px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+  }
+  #cookie-banner p {
+    /* Si necesitas ajustar el ancho del párrafo: */
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 #cookie-banner button:hover {
