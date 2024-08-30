@@ -1846,3 +1846,42 @@ button {
   }
 }
 
+#cookie-banner button {
+  background-color: #8f9fe6; /* Un verde más moderno */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+}
+
+#cookie-banner button:hover {
+  background-color: #3e8e41;
+}
+
+#reject-cookies {
+  background-color: #f44336; /* Un rojo para el botón de rechazar */
+}
+
+#reject-cookies:hover {
+  background-color: #d32f2f;
+}
+
+.hide {
+  display: none !important; /* Fuerza la ocultación del elemento */
+  transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+}

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import TopLoadingLine from "@/components/TopLoadingLine";
 import "@/styles/globals.css";
+import CookieBanner from "@/components/banner";
 
 export default function App({ Component, pageProps }) {
 
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
       </Aos>
       <ScrollToTopButton />
       <Footer />
+      <CookieBanner/>
     </main>
   </>
 }
