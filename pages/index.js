@@ -83,13 +83,13 @@ export default function Home() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFXNVQNPCG"></script>
 
       </Head>
-      <script>
+      {/* <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)}
   gtag('js', new Date());
 
   gtag('config', 'G-XFXNVQNPCG');
-</script>
+</script> */}
 
 
       <section className="header_data_section">
