@@ -1,17 +1,21 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
     <Html lang="en">
      <Head >
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFXNVQNPCG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-XFXNVQNPCG"></Script>
+<Script id="google-analytics">
+  {
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+  
+    // gtag('config', 'G-XFXNVQNPCG');
 
-  gtag('config', 'G-XFXNVQNPCG');
-</script>
+  }
+</Script>
         <link rel="icon" href="/logo-shark.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
