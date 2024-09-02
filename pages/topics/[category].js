@@ -4,6 +4,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 
 
+
 // function for markdown first image fetch
 function extractFirstImageUrl(markdownContent) {
     // Check if markdownContent is provided and non-empty
@@ -16,6 +17,7 @@ function extractFirstImageUrl(markdownContent) {
     const match = markdownContent.match(regex);
     return match ? match[1] : null;
 }
+
 
 export default function CategoryPage() {
 
