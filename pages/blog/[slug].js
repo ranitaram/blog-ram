@@ -93,8 +93,8 @@ export default function blogPage() {
                         : 'Loading...'
                 }
             </title>
-            {/* <meta name="description" content={blog[0]?.description.substring(0, 150) + "..."} />
-            <meta property="og:image" content={blog[0]?.image} /> */}
+            <meta name="description" content={blog[0]?.description.substring(0, 150) + "..."} />
+            {/* <meta property="og:image" content={blog[0]?.image} /> */}
         </Head>
 
         <div className="slugpage">
