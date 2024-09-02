@@ -93,7 +93,7 @@ export default function blogPage() {
                         : 'Loading...'
                 }
             </title>
-            <meta name="description" content={blog[0].description.substring(0, 150) + "..."} />
+            <meta name="description" content={blog[0].description} />
             {/* <meta property="og:image" content={blog[0]?.image} /> */}
         </Head>
 
