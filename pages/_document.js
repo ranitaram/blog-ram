@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang="en">
      <Head >
      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-XFXNVQNPCG"></Script>
+     <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16709632945"></Script>
 <Script id="google-analytics">
   {
     // window.dataLayer = window.dataLayer || [];
@@ -19,13 +20,7 @@ export default function Document() {
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16709632945">
 </script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-16709632945');
-</script>
         <link rel="icon" href="/logo-shark.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
