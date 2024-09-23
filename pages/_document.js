@@ -16,6 +16,16 @@ export default function Document() {
 
   }
 </Script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16709632945">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16709632945');
+</script>
         <link rel="icon" href="/logo-shark.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
