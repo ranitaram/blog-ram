@@ -9,14 +9,14 @@ export default function Footer() {
                     <h4>&copy; 2024 Todos Los Derechos Reservados.</h4>
                     {/* <h3>Coded By <span>@vbmcoder</span></h3> */}
                 </div>
-                {/* <div className="q_links" data-aos="fade-up">
-                    <h3>Quick Links</h3>
+                <div className="q_links" data-aos="fade-up">
+                    <h3>Enlaces rápidos</h3>
                     <ul>
-                        <li><Link href='/'>Advertise with us</Link></li>
-                        <li><Link href='/'>About Us</Link></li>
-                        <li><Link href='/'>Contact Us</Link></li>
+                        <li><Link href='/'>Inicio</Link></li>
+                        <li><Link href='/servicios'>Servicios</Link></li>
+                        <li><Link href='/contacto'>Contacto</Link></li>
                     </ul>
-                </div> */}
+                </div>
                 <div className="q_links" data-aos="fade-up">
                     <h3>Enlaces Legales</h3>
                     <ul>

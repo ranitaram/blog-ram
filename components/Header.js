@@ -90,7 +90,7 @@ export default function Header() {
                 <div className="nav_list_dark">
                     <ul>
                         <li><Link href="/">Inicio</Link></li>
-                        <li><Link href="/landingpage">Servicios</Link></li>
+                        <li><Link href="/servicios">Servicios</Link></li>
                         <li><Link href="/contacto">Contacto</Link></li>
                     </ul>
                     <div className="navlist_mobile_ul">
@@ -144,9 +144,9 @@ export default function Header() {
                 <hr />
                 <h3 className="mt-3">Main Menu</h3>
                 <ul onClick={handleLinkClick}>
-                    <li><Link href="/">Home</Link></li>
-                    {/* <li><Link href="/">About Me</Link></li>
-                    <li><Link href="/">Contact</Link></li> */}
+                    <li><Link href="/">Inicio</Link></li>
+                    <li><Link href="/servicios">Servicios</Link></li>
+                    <li><Link href="/contacto">Contacto</Link></li>
                 </ul>
                 <hr />
                 <h3 className="mt-3">Temas</h3>
