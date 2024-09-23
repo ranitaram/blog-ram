@@ -89,9 +89,9 @@ export default function Header() {
 
                 <div className="nav_list_dark">
                     <ul>
-                        <li><Link href="/">Home</Link></li>
-                        {/* <li><Link href="/">About Me</Link></li>
-                        <li><Link href="/">Contacto</Link></li> */}
+                        <li><Link href="/">Inicio</Link></li>
+                        <li><Link href="/landingpage">Servicios</Link></li>
+                        <li><Link href="/contacto">Contacto</Link></li>
                     </ul>
                     <div className="navlist_mobile_ul">
                         <button onClick={toggleDarkMode}>{darkMode ? <IoMoonSharp /> : <LuSun />}</button>

@@ -20,8 +20,8 @@ export default function Footer() {
                 <div className="q_links" data-aos="fade-up">
                     <h3>Enlaces Legales</h3>
                     <ul>
-                        <li><Link href='/politica-privacidad'>Política de Privacidad.</Link></li>
-                        <li><Link href='/politica-cookies'>POLÍTICA DE COOKIES</Link></li>
+                        <li><Link href='/politica-privacidad'>Política de Privacidad</Link></li>
+                        <li><Link href='/politica-cookies'>Política de cookies</Link></li>
                         <li><Link href='/terminos-uso'>Términos de uso</Link></li>
                     </ul>
                 </div>

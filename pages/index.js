@@ -83,13 +83,7 @@ export default function Home() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFXNVQNPCG"></script>
 
       </Head>
-      {/* <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
 
-  gtag('config', 'G-XFXNVQNPCG');
-</script> */}
 
 
       <section className="header_data_section">
@@ -269,6 +263,7 @@ export default function Home() {
               <h2>Redes sociales</h2>
               <div className="talk_sec">
                 <h4>¿Quieres saber cómo puedo resolver problemas específicos de tu negocio? Hablemos.</h4>
+                {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWolcLWStqxiqbw42hn3TVmPAFS_HoLrlM5FYZiniJkWfPEw/viewform?embedded=true" width="640" height="876" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> */}
                 <div className="social_talks flex flex-center gap-1 mt-2">
                   <div className="st_icon" data-aos="fade-up"  onClick={() => window.location.href = 'https://github.com/ranitaram'}>
                     <FaGithub />
